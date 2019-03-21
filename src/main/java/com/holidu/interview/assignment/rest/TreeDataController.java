@@ -21,10 +21,13 @@ public class TreeDataController {
 	@Autowired
 	private TreeDataProcessor treeDataProcessor;
 
+	
 	/**
-	 * @see {@link TreeDataProcesser#countInArea}
+	 * @param coordinates
+	 * @param radius
+	 * @return
 	 */
-	@RequestMapping("/tree/filter/{cordinates}/{radius}")
+	@RequestMapping("/tree/filter/{coordinates}/{radius}")
 	public Map<String, Long> getData(@PathVariable String coordinates, @PathVariable double radius) {
 		return treeDataProcessor.countInArea(coordinates, radius);
 	}

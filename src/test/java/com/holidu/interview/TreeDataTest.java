@@ -41,6 +41,6 @@ public class TreeDataTest {
 	 */
 	@Test
 	public void mockRadius() {
-		Assert.assertNotNull(this.treeDataProcessor.countInArea(0, 0, 10000000));
+		Assert.assertNotNull(this.treeDataProcessor.countInArea("100,500", 10000000));
 	}
 }

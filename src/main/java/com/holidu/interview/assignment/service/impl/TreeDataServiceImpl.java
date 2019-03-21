@@ -23,8 +23,9 @@ public class TreeDataServiceImpl implements TreeDataService {
 	@Value("${tree.data.url}")
 	private String treeDataUrl;
 
-	/**
-	 * if data is frequently updated on the source, this must cached
+	
+	/* (non-Javadoc)
+	 * @see com.holidu.interview.assignment.service.TreeDataService#getData()
 	 */
 	@Override
 	public List<TreeData> getData() throws IllegalArgumentException {

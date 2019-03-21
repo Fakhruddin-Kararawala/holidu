@@ -31,7 +31,7 @@ public class TreeDataProcessorImpl implements TreeDataProcessor {
 
 	/**
 	 * hold data in a list to avoid frequent calls to data source, caching can
-	 * also be done
+	 * also be done or we can use solr to store this data to get frequent result.
 	 */
 	private List<TreeData> data;
 
